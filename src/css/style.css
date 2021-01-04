@@ -1,0 +1,67 @@
+*, *::before, *::after {
+  background-color: #ecf0f1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bin2dec {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-flow: column-reverse;
+}
+
+.bin2dec__aside {
+  background-color: #bdc3c7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  min-height: 50px;
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+
+.bin2dec__container {
+  padding: 10px;
+}
+
+.bin2dec__title {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.bin2dec__description {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.bin2dec-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bin2dec-form-group {
+  margin-bottom: 1rem;
+  max-width: 49%;
+}
+
+.bin2dec-form-label {
+  font-weight: bold;
+}
+  .bin2dec-form-label::after {
+    content: ':';
+  }
+
+.bin2dec-form-control {
+  border: 1px solid #95a5a6;
+  border-radius: 5px;
+  display: block;
+  padding: 10px;
+  width: 100%;
+}

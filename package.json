@@ -1,0 +1,8 @@
+{
+  "name": "bin2dec",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:bulnes/bin2dec.git",
+  "author": "Bruno Bulnes <bulnes.bruno@gmail.com>",
+  "license": "MIT"
+}
