@@ -100,6 +100,9 @@ body {
   .bin2dec {
     flex-direction: row;
     flex-flow: row;
+    width: 80%;
+    min-width: 741px;
+    max-width: 771px;
   }
 
   .bin2dec__aside {
