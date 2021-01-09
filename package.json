@@ -6,14 +6,27 @@
   "author": "Bruno Bulnes <bulnes.bruno@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "babel src/js -d lib"
+    "build": "webpack --config webpack.config.js --mode production"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.11"
+    "@babel/preset-env": "^7.12.11",
+    "@babel/runtime-corejs3": "^7.12.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
+    "eslint": "^7.17.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "sass": "^1.32.2",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.12.2",
+    "webpack-cli": "^4.3.1"
   },
   "dependencies": {
-    "core-js": "^2.6.12"
-  }
+    "core-js": "^3.8.2"
+  },
+  "browserslist": "last 2 versions, > 0.1%, not dead"
 }

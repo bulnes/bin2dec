@@ -1,20 +1,20 @@
 let $bin;
 let $dec;
 
-const bin2dec = e => {
+const bin2dec = () => {
   const bin = parseInt($bin.value, 10);
   const sBin = `${bin}`.split('').reverse().join('');
   let hasOthersDigits = false;
   let dec = 0;
 
-  if (isNaN(bin)) {
+  if (Number.isNaN(bin)) {
     $dec.value = '';
     return;
   }
 
-  for (let i = 0; i < sBin.length; i++) {
+  for (let i = 0; i < sBin.length; i += 1) {
     const digit = parseInt(sBin[i], 10);
-    dec += (digit * Math.pow(2, i));
+    dec += (digit * (2 ** i));
 
     hasOthersDigits = hasOthersDigits || (digit !== 1 && digit !== 0);
   }
@@ -27,14 +27,14 @@ const bin2dec = e => {
   $dec.value = dec;
 };
 
-const dec2bin = e => {
+const dec2bin = () => {
   const dec = parseInt($dec.value, 10);
   const digits = [];
-  
+
   let value = 0;
   let pointer = dec;
 
-  if (isNaN(dec)) {
+  if (Number.isNaN(dec)) {
     $bin.value = '';
     return;
   }
@@ -43,7 +43,7 @@ const dec2bin = e => {
     const digit = parseInt(pointer % 2, 10);
     digits.push(digit);
 
-    pointer = pointer / 2;
+    pointer /= 2;
   } while (pointer > 1);
 
   pointer = parseInt(pointer, 10);
